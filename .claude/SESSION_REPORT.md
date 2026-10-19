@@ -26,6 +26,7 @@
 - Rebuilt `applications.csv`; added 60 rows, dropped 3 (BIS PhD Fellowship, Humboldt, Guelph); added `file_name` column
 - Generator now writes `ARCIDIACONO_Cristian_CL_<Place>.tex/.pdf` and has a `--clean` flag
 - Regenerated and compiled all 141 letters
+- Finance template switched from \singlespacing to \onehalfspacing at the user's request; 40 finance letters regenerated, all still two pages
 
 **Decisions:**
 - No priority column in the new sheet: fit paragraphs kept for the earlier Priority A rows; added only for new rows whose ad names macro-finance / international macro / monetary explicitly
