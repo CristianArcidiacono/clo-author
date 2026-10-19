@@ -37,10 +37,16 @@ the reference-letter spreadsheet, changing only the bracketed placeholders.
 | diff vs template | Only the three placeholder lines differ | PASS |
 | Leftover placeholders in live body | Only `[HOST INSTITUTION]` in the Humboldt letter (host not chosen yet) | PASS (deliberate) |
 
+## Incremental Work Log
+
+**Second pass (same day):** user uploaded a new spreadsheet version: 141 rows (60 added, 3 removed: BIS PhD Fellowship,
+Humboldt, Guelph), no priority column. Rebuilt `applications.csv` (row number = id, new `file_name` column), renamed every
+output to `ARCIDIACONO_Cristian_CL_<Place>` as requested, added fit paragraphs only for added rows whose ad names the
+user's fields explicitly (7 rows). 141/141 letters compile, all two pages.
+
 ## Open Questions / Blockers
 
-- [ ] Humboldt letter needs the German host once chosen.
-- [ ] BIS letters (rows 8, 12) state that the 2024 PhD Fellowship started the two Hofmann projects; confirm wording.
+- [ ] BIS letter (row 16) states that the 2024 PhD Fellowship started the two Hofmann projects; confirm wording.
 - [ ] Fit paragraphs mention specific people; the user should re-read them before sending.
 
 ## Next Steps

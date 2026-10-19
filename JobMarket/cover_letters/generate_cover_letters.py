@@ -2,14 +2,15 @@
 """Generate one personalized cover letter per application.
 
 Reads applications.csv, picks the macro or finance template, fills the three
-bracketed placeholders and writes letters/NN_slug_letter.tex. Everything outside
-the placeholders is copied byte for byte from the template; the archived draft
-inside \\begin{comment} ... \\end{comment} is left untouched.
+bracketed placeholders and writes letters/ARCIDIACONO_Cristian_CL_<file_name>.tex.
+Everything outside the placeholders is copied byte for byte from the template;
+the archived draft inside \\begin{comment} ... \\end{comment} is left untouched.
 
 Usage:
     python3 generate_cover_letters.py          # write .tex files only
     python3 generate_cover_letters.py --pdf    # also compile each letter with pdflatex into pdf/
-    python3 generate_cover_letters.py --only 12 29   # restrict to the given ids
+    python3 generate_cover_letters.py --only 16 35   # restrict to the given ids (row numbers)
+    python3 generate_cover_letters.py --pdf --clean  # delete old letters/*.tex and pdf/*.pdf first
 """
 import argparse
 import csv
@@ -26,6 +27,7 @@ TEMPLATES = {
 }
 TEX_DIR = HERE / "letters"
 PDF_DIR = HERE / "pdf"
+PREFIX = "ARCIDIACONO_Cristian_CL_"
 
 OPEN = "[POSITION] at [INSTITUTION]"
 CLOSE = "[INSTITUTION]"
@@ -65,21 +67,26 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--pdf", action="store_true", help="compile each letter with pdflatex")
     ap.add_argument("--only", nargs="*", help="application ids to generate (default: all)")
+    ap.add_argument("--clean", action="store_true", help="remove previously generated .tex and .pdf files first")
     args = ap.parse_args()
+
+    if args.clean:
+        for old in list(TEX_DIR.glob(PREFIX + "*.tex")) + list(PDF_DIR.glob(PREFIX + "*.pdf")):
+            old.unlink()
 
     templates = {k: p.read_text(encoding="utf-8") for k, p in TEMPLATES.items()}
     TEX_DIR.mkdir(exist_ok=True)
     with CSV.open(encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
     if args.only:
-        wanted = {x.zfill(2) for x in args.only}
+        wanted = {x.zfill(3) for x in args.only}
         rows = [r for r in rows if r["id"] in wanted]
 
     failed = []
     for row in rows:
-        out = TEX_DIR / f"{row['id']}_{row['slug']}_{row['letter']}.tex"
+        out = TEX_DIR / f"{PREFIX}{row['file_name']}.tex"
         out.write_text(fill(templates[row["letter"]], row), encoding="utf-8")
-        print(f"{out.name:60s} {row['institution']}")
+        print(f"{row['id']} {row['letter']:7s} {out.name:72s} {row['institution']}")
         if args.pdf and not compile_pdf(out):
             failed.append(out.name)
     print(f"\n{len(rows)} letters written to {TEX_DIR}")

@@ -18,3 +18,21 @@
 **Status:**
 - Done: letters, PDFs, generator
 - Pending: user review of fit paragraphs; Humboldt host
+
+## 2026-10-19 — Cover letters: second spreadsheet version, new file names
+
+**Operations:**
+- Replaced `JobMarket/Arcidiacono_reference_letters_2026-27.xlsx` with the new version (141 rows)
+- Rebuilt `applications.csv`; added 60 rows, dropped 3 (BIS PhD Fellowship, Humboldt, Guelph); added `file_name` column
+- Generator now writes `ARCIDIACONO_Cristian_CL_<Place>.tex/.pdf` and has a `--clean` flag
+- Regenerated and compiled all 141 letters
+
+**Decisions:**
+- No priority column in the new sheet: fit paragraphs kept for the earlier Priority A rows; added only for new rows whose ad names macro-finance / international macro / monetary explicitly
+
+**Results:**
+- 141/141 compile without errors, all two pages, no leftover placeholders
+
+**Status:**
+- Done: letters, PDFs regenerated under the requested names
+- Pending: user review of the 7 new fit paragraphs
