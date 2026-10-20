@@ -50,3 +50,16 @@
 **Status:**
 - Done: every finance letter carries a fit paragraph
 - Pending: user review of the new paragraphs; macro letters unchanged (23 of 101 with fit)
+
+## 2026-10-20 — Fit paragraphs for all macro letters
+
+**Operations:**
+- Added `fit_paragraph` text for the 78 macro rows that lacked one; regenerated the 101 macro letters
+- Web-checked faculty affiliations at 48 institutions before naming anyone
+
+**Results:**
+- 141/141 letters now carry a fit paragraph; all compile, all two pages
+
+**Status:**
+- Done: complete set
+- Pending: user review of the new paragraphs

@@ -15,10 +15,9 @@ Files are named `ARCIDIACONO_Cristian_CL_<Place>.tex` / `.pdf`, with underscores
 
 - **Template choice:** track "Academic · Finance" gets the finance letter; macro/economics, policy,
   fellowship and research-institute rows get the macro letter.
-- **Fit paragraph:** every finance letter has one. Macro letters have one for the Priority A rows of the
-  first spreadsheet version, for Geneva GSEM (personal tie), and for added rows whose ad names Cristian's
-  fields explicitly (Danmarks Nationalbank, IE Economics, DePaul Economics, Rochester, UT Austin).
-  Other macro rows drop the placeholder paragraph. To add one, fill `fit_paragraph` in the CSV and rerun.
+- **Fit paragraph:** every letter has one (141/141). Faculty are named only where their current affiliation
+  was checked on the web at the time of writing; otherwise the paragraph is institutional. To change one,
+  edit `fit_paragraph` in the CSV and rerun.
 - **Spacing:** both templates use `\onehalfspacing`.
 
 ## Regenerate

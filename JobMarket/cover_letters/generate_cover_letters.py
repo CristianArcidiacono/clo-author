@@ -54,7 +54,7 @@ def compile_pdf(tex: Path) -> bool:
         r = subprocess.run(
             ["pdflatex", "-interaction=nonstopmode", "-halt-on-error",
              "-output-directory", str(build), str(tex)],
-            capture_output=True, text=True,
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
         )
         if r.returncode != 0:
             print(f"  pdflatex FAILED for {tex.name}; see {build / (tex.stem + '.log')}", file=sys.stderr)

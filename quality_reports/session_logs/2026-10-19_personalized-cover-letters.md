@@ -48,6 +48,10 @@ user's fields explicitly (7 rows). 141/141 letters compile, all two pages.
 31 finance letters so that all 40 carry one; faculty named only where a web check confirmed the affiliation
 (no names for Católica, Nova, Erasmus Finance; William Diamond dropped as unverified).
 
+**2026-10-20, later:** fit paragraphs written for the remaining 78 macro letters, so all 141 letters carry one.
+48 institutions web-checked for faculty affiliations; names dropped where a move or no confirmation was found
+(Bachmann, Michaillat, Shin, Jeanne, Acconcia, Behrens, Garín, Phelan, Leahy, Trigari, Taylor).
+
 ## Open Questions / Blockers
 
 - [ ] BIS letter (row 16) states that the 2024 PhD Fellowship started the two Hofmann projects; confirm wording.
