@@ -44,6 +44,10 @@ Humboldt, Guelph), no priority column. Rebuilt `applications.csv` (row number = 
 output to `ARCIDIACONO_Cristian_CL_<Place>` as requested, added fit paragraphs only for added rows whose ad names the
 user's fields explicitly (7 rows). 141/141 letters compile, all two pages.
 
+**2026-10-20:** finance template switched to `\onehalfspacing` (user request). Fit paragraphs written for the remaining
+31 finance letters so that all 40 carry one; faculty named only where a web check confirmed the affiliation
+(no names for Católica, Nova, Erasmus Finance; William Diamond dropped as unverified).
+
 ## Open Questions / Blockers
 
 - [ ] BIS letter (row 16) states that the 2024 PhD Fellowship started the two Hofmann projects; confirm wording.

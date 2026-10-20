@@ -37,3 +37,16 @@
 **Status:**
 - Done: letters, PDFs regenerated under the requested names
 - Pending: user review of the 7 new fit paragraphs
+
+## 2026-10-20 — Fit paragraphs for all finance letters
+
+**Operations:**
+- Added `fit_paragraph` text for the 31 finance rows that lacked one in `JobMarket/cover_letters/applications.csv`; regenerated the 40 finance letters
+- Web-checked faculty affiliations before naming anyone
+
+**Results:**
+- 40/40 finance letters compile, all two pages at one-and-a-half spacing
+
+**Status:**
+- Done: every finance letter carries a fit paragraph
+- Pending: user review of the new paragraphs; macro letters unchanged (23 of 101 with fit)
