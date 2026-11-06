@@ -63,3 +63,4 @@
 **Status:**
 - Done: complete set
 - Pending: user review of the new paragraphs
+- 2026-11-06: added Monash University (EJM 12795, row 142), macro letter
