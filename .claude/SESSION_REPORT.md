@@ -67,3 +67,4 @@
 - 2026-11-06: added Oxford Associate Professorships (EJM 12897, row 143), macro letter
 - 2026-11-06: added Federal Reserve Board Economist (JOE 2026-02_111478374, row 144), macro letter
 - 2026-11-06: added Toronto Metropolitan University (EJM 12820, row 145), macro letter
+- 2026-11-06: added Stockholm University macro-finance postdoc (EJM 12961, row 146), macro letter
