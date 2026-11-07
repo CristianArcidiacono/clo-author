@@ -69,3 +69,4 @@
 - 2026-11-06: added Toronto Metropolitan University (EJM 12820, row 145), macro letter
 - 2026-11-06: added Stockholm University macro-finance postdoc (EJM 12961, row 146), macro letter
 - 2026-11-06: added UNSW Business School finance (EJM 12681, row 147), finance letter
+- 2026-11-07: added BI Norwegian Business School finance (EJM 12913, row 148), finance letter
