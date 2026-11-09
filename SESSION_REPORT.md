@@ -70,3 +70,19 @@
 - 2026-11-06: added Stockholm University macro-finance postdoc (EJM 12961, row 146), macro letter
 - 2026-11-06: added UNSW Business School finance (EJM 12681, row 147), finance letter
 - 2026-11-07: added BI Norwegian Business School finance (EJM 12913, row 148), finance letter
+
+## 2026-11-09 — Letters for the 63 new places in the latest spreadsheet
+
+**Operations:**
+- Replaced `JobMarket/Arcidiacono_reference_letters_2026-27.xlsx` with the new version (212 rows)
+- Matched it against `applications.csv`: 10 rows were positions already covered under older labels; 63 were new
+- Ran a draft-then-verify workflow (126 agents): one agent drafted each place's opening phrases and fit paragraph, an independent agent checked every claim against the CV facts, re-checked named people and style
+- Added rows 152-214 to `JobMarket/cover_letters/applications.csv`; generated and compiled all 63 letters
+- Retargeted the Cambridge fellowship letter (row 19) to Clare College only
+
+**Decisions:**
+- All 63 fit paragraphs are institutional: the verifiers could not re-confirm any faculty name (search budget exhausted, several sites blocked), so they removed them
+- Letters written for 9 places whose deadlines have passed; flagged to the user
+
+**Results:**
+- 214/214 letters compile, all two pages, no errors or overfull lines
