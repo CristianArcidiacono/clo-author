@@ -88,3 +88,34 @@ Not blocking the benchmark choice: verbatim EC wording in national languages (bl
 2. Add the consumer-confidence and qualitative-survey block and the two missing LLM literatures.
 3. Resolve the NBER 35927 number.
 4. Restate the positioning around persistence and memorised levels, with Anesti et al. as the named benchmark.
+
+---
+
+## 3. librarian-critic — literature review, round 2
+
+**Score:** 92/100 (round 1: 78). Gate cleared; no strike 2.
+**Verdict:** Coverage and positioning are now sound; what remains is syncing the text to the verified facts and cleaning the bibliography. The critic checked no citation against sources.
+
+### Deductions
+| Issue | Points |
+|---|---|
+| Methods: nothing on inference for skill over a no-change baseline (Diebold-Mariano, Clark-West, Giacomini-White; scoring rules for categorical shares) | -3 |
+| Eight BibTeX entries with empty author placeholders | -2 |
+| [V] tags on entries whose author names are admitted unconfirmed | -2 |
+| Two proximity scores off the stated rule (Bybee, Lukauskas) | -1 |
+
+All round 1 deductions were judged cleared or largely cleared.
+
+### Contradictions with `discovery_verification_llm_synthetic_macro_surveys.md` (not penalised)
+1. Anesti et al. target format is still described as unresolved; it is verified (banded percentages treated as numbers, direct multiple choice, GPT-3.5, two waves).
+2. HouseholdBench's six surveys are now known; its macro tasks are numeric or probabilistic.
+3. The contribution statement promises answer distributions across demographic groups; EC demographic files hold balances only.
+4. Maier et al. author list is confirmed; the review omits that direct rating already reaches about 80% correlation attainment.
+5. EC file has 33 countries, not a 27-country panel.
+
+### Open
+1. Add the forecast-evaluation and scoring-rule methods block.
+2. Update Sections 1A, 2, 3, 4 to the verified facts.
+3. Fill or remove placeholder BibTeX authors; align [V] tags.
+4. Note that Anesti et al. needed temperature 1.5 to match dispersion.
+5. Resolve the Zarifhonarvar JME page and the HouseholdBench NBER number.
